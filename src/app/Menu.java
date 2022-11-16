@@ -1,5 +1,7 @@
 package app;
 
+import app.product.Product;
+
 public class Menu {
 
     public void printEntrance() {

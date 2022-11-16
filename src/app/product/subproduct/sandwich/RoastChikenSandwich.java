@@ -1,4 +1,4 @@
-package app.product.subproduct.sandwitch;
+package app.product.subproduct.sandwich;
 
 import app.product.subproduct.*;
 

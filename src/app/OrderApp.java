@@ -5,6 +5,10 @@ import java.util.Scanner;
 public class OrderApp {
     private Menu menu;
 
+    public OrderApp(Menu menu) {
+        this.menu = menu;
+    }
+
     public void start() {
         Scanner scanner = new Scanner(System.in);
 
@@ -14,8 +18,11 @@ public class OrderApp {
 
         System.out.println("[📣] 안녕하세요! ");
 
-        while (true) {
+        //while
+
             menu.printEntrance();
-        }
+
+        String input = scanner.next();
+
     }
 }
