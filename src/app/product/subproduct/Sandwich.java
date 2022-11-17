@@ -1,6 +1,9 @@
 package app.product.subproduct;
 
 import app.product.Product;
+import app.product.subproduct.sandwich.RoastChikenSandwich;
+
+import java.util.Scanner;
 
 public class Sandwich extends Product {
     private MainIngredient mainIngredient;
@@ -10,6 +13,8 @@ public class Sandwich extends Product {
     private Sauces[] sauce;
 
     private int calories;
+
+
 
     public Sandwich(String name, int price, int calorie, MainIngredient mainIngredient, Bread bread, Cheese[] cheeses, Vegetable[] vegetables, Sauces[] sauce) {
         super(name, price, calorie);
@@ -27,5 +32,13 @@ public class Sandwich extends Product {
         this.cheeses = cheeses;
         this.vegetables = vegetables;
         this.sauce = sauce;
+    }
+    public void makeSandwich() {
+        Scanner scanner = new Scanner(System.in);
+        int input = scanner.nextInt();
+        switch (input) {
+            case 1:
+                RoastChikenSandwich roastChikenSandwich;
+        }
     }
 }

@@ -6,7 +6,7 @@ public class Main {
         AppConfigurer appConfigurer = new AppConfigurer();
 
 
-        OrderApp orderApp = new OrderApp(appConfigurer.menu());
+        OrderApp orderApp = new OrderApp(appConfigurer.menu(),appConfigurer.sandwich());
 
         orderApp.start();
     }

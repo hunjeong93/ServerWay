@@ -1,4 +1,7 @@
 package app.product.subproduct;
 
-public class Cheese {
+import app.product.Ingredient;
+
+public class Cheese extends Ingredient {
+
 }

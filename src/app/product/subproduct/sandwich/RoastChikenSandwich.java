@@ -3,13 +3,22 @@ package app.product.subproduct.sandwich;
 import app.product.subproduct.*;
 
 public class RoastChikenSandwich extends Sandwich {
-    private String main = "Chiken";
-    private MainIngredient mainIngredient = new MainIngredient(main);
+    private String main = "chiken";
 
+    private int colories = 200;
+    public String getMain() {
+        return main;
+    }
 
-    public RoastChikenSandwich(String name, int price, int calorie, MainIngredient mainIngredient, Bread bread, Cheese[] cheeses, Vegetable[] vegetables, Sauces[] sauce, String main, MainIngredient mainIngredient1) {
+    public int getColories() {
+        return colories;
+    }
+
+    public RoastChikenSandwich(int id, String name, int price, int calorie, MainIngredient mainIngredient, Bread bread, Cheese[] cheeses, Vegetable[] vegetables, Sauces[] sauce) {
+        super(id, name, price, calorie, mainIngredient, bread, cheeses, vegetables, sauce);
+    }
+
+    public RoastChikenSandwich(String name, int price, int calorie, MainIngredient mainIngredient, Bread bread, Cheese[] cheeses, Vegetable[] vegetables, Sauces[] sauce) {
         super(name, price, calorie, mainIngredient, bread, cheeses, vegetables, sauce);
-        this.main = main;
-        this.mainIngredient = mainIngredient1;
     }
 }
