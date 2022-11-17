@@ -1,17 +1,18 @@
 package app;
 
+import app.product.ProductRepository;
 import app.product.subproduct.Sandwich;
 
 import java.util.Scanner;
 
 public class OrderApp {
     private Menu menu;
-    private Sandwich sandwich;
+    private ProductRepository productRepository;
     private Order order;
 
-    public OrderApp(Menu menu, Sandwich sandwich) {
+    public OrderApp(Menu menu, ProductRepository productRepository) {
         this.menu = menu;
-        this.sandwich = sandwich;
+        this.productRepository = productRepository;
     }
 
     public void start() {
@@ -33,7 +34,7 @@ public class OrderApp {
                 switch (Integer.parseInt(input)) {
                     case 1:
                         menu.choiceSandwich();
-                       sandwich.makeSandwich();
+                        productRepository.makeSandwich();
                     case 2:
 //                        장바구니
 

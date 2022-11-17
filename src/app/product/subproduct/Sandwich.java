@@ -16,6 +16,8 @@ public class Sandwich extends Product {
 
 
 
+
+
     public Sandwich(String name, int price, int calorie, MainIngredient mainIngredient, Bread bread, Cheese[] cheeses, Vegetable[] vegetables, Sauces[] sauce) {
         super(name, price, calorie);
         this.mainIngredient = mainIngredient;
@@ -33,12 +35,5 @@ public class Sandwich extends Product {
         this.vegetables = vegetables;
         this.sauce = sauce;
     }
-    public void makeSandwich() {
-        Scanner scanner = new Scanner(System.in);
-        int input = scanner.nextInt();
-        switch (input) {
-            case 1:
-                RoastChikenSandwich roastChikenSandwich;
-        }
-    }
+
 }

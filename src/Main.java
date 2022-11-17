@@ -6,7 +6,11 @@ public class Main {
         AppConfigurer appConfigurer = new AppConfigurer();
 
 
-        OrderApp orderApp = new OrderApp(appConfigurer.menu(),appConfigurer.sandwich());
+        OrderApp orderApp = new OrderApp(
+                appConfigurer.menu(),
+                appConfigurer.productReposigory()
+
+        );
 
         orderApp.start();
     }

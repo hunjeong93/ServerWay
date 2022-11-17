@@ -38,4 +38,35 @@ public class Menu {
         System.out.println("-".repeat(60));
 
     }
+
+    public void choiceBread() {
+        System.out.println("☑ 빵을 선택해주세요 __ 🥖");
+        System.out.println("길이 :[1. 15cm] [2. 30cm]");
+        System.out.println("굽기 :[1. 굽기] [2. 굽기선택안함]");
+        System.out.println("종류 :[1. 화이트] [2. 위트] [3. 허니오트] ");
+        System.out.println("-".repeat(60));
+    }
+
+    public void choiceCheese() {
+        System.out.println("☑ 치즈를 선택해주세요 __ 🧀");
+        System.out.println("종류 :\n" +
+                "[1. 아메리칸] [2. 모차렐라] [3. 치즈 제외]\n");
+
+    }
+    public void addCheese(){
+        System.out.println("치즈를 추가하시겠습니까? : \n" +
+                "[1. 아메리칸] [2. 모차렐라] [3. 추가안함]\n");
+        System.out.println("-".repeat(60));
+    }
+    public void removeVege() {
+        System.out.println("☑ 제외할 야채를 선택해주세요 __ 🥬 (최대 6개) \n");
+        System.out.println("종류 :  \n" +
+                "[1. 제외할 야채 없음] [2. 양상추] [3. 토마토]\n" +
+                "[4. 오이] [5. 피클] [6. 올리브] [7. 할라피뇨]\n" +
+                "\n" +
+                "\n" +
+                "[0. 선택완료] ");
+        System.out.println("-".repeat(60));
+    }
+
 }

@@ -3,8 +3,8 @@ package app.product.subproduct.bread;
 import app.product.subproduct.Bread;
 
 public class WhiteBread extends Bread {
-    private String name = "whiteBread";
-    private int calories = 100;
+    private String name;
+    private int calories;
 
     private boolean longSize;
 
