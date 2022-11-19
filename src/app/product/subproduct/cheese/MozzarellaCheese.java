@@ -6,7 +6,15 @@ public class MozzarellaCheese extends Cheese {
     private String name;
     private int colories;
 
-    public MozzarellaCheese(String name, int calories) {
-        super(name, calories);
+    public String getName() {
+        return name;
+    }
+
+    public int getColories() {
+        return colories;
+    }
+
+    public MozzarellaCheese() {
+        super("mozzarellaCheese", 13);
     }
 }

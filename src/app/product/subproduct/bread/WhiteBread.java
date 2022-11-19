@@ -18,7 +18,9 @@ public class WhiteBread extends Bread {
         return calories;
     }
 
-    public WhiteBread(String name, int calories, boolean longSize, boolean baked) {
-        super(name, calories, longSize, baked);
+    public WhiteBread(boolean longSize, boolean baked) {
+        super("whiteBread",100, longSize, baked);
+        this.longSize =longSize;
+        this.baked = baked;
     }
 }

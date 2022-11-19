@@ -4,7 +4,7 @@ import app.product.subproduct.Bread;
 
 public class HoneyOat extends Bread {
     private String name;
-    private int calories = 110;
+    private int calories;
 
     private boolean longSize;
 
@@ -12,8 +12,8 @@ public class HoneyOat extends Bread {
 
 
 
-    public HoneyOat(String name, int calories, boolean longSize, boolean baked) {
-        super(name, calories, longSize, baked);
+    public HoneyOat(boolean longSize, boolean baked) {
+        super("honeyOat", 110, longSize, baked);
         this.longSize = longSize;
         this.baked = baked;
 

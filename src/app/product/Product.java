@@ -5,6 +5,8 @@ public class Product {
     private String name;
     private int price;
     private int calorie;
+    public Product() {
+    }
 
     public Product(String name, int price, int calorie) {
         this.name = name;
@@ -18,6 +20,7 @@ public class Product {
         this.price = price;
         this.calorie = calorie;
     }
+
 
     public int getId() {
         return id;

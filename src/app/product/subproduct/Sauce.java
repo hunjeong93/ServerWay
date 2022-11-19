@@ -1,6 +1,6 @@
 package app.product.subproduct;
 
-public class Vegetable {
+public class Sauce {
     private String name;
     private int calorie;
 
@@ -11,12 +11,13 @@ public class Vegetable {
     public int getCalorie() {
         return calorie;
     }
-
-    public Vegetable() {
+    public Sauce() {
     }
 
-    public Vegetable(String name, int calorie) {
+    public Sauce(String name, int calorie) {
         this.name = name;
         this.calorie = calorie;
     }
+
+
 }

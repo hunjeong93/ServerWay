@@ -1,22 +1,27 @@
 package app.product.subproduct;
 
 
+import app.product.subproduct.cheese.AmericanCheese;
 
 public class Cheese {
 
     private String name;
-    private int calories;
+    private int calorie;
 
-    private String name2;
-
-    public Cheese(String name, int calories) {
-        this.name =name;
-        this.calories =calories;
+    public String getName() {
+        return name;
     }
 
-    public Cheese(String name, String name2, int calories) {
+    public int getCalorie() {
+        return calorie;
+    }
+
+    public Cheese(String name, int calorie) {
         this.name = name;
-        this.name2 = name2;
-        this.calories = calories;
+        this.calorie = calorie;
     }
+
+
+
+
 }

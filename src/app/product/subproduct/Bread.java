@@ -5,7 +5,7 @@ import app.product.Product;
 
 public class Bread {
     private String name;
-    private int Calories;
+    private int Calorie;
     private boolean longSize; // false = 15cm ,  true = 30cm
     private boolean baked; // false = 안구움 , true = 구움
 
@@ -13,8 +13,8 @@ public class Bread {
         return name;
     }
 
-    public int getCalories() {
-        return Calories;
+    public int getCalorie() {
+        return Calorie;
     }
 
     public boolean isLongSize() {
@@ -25,9 +25,9 @@ public class Bread {
         return baked;
     }
 
-    public Bread(String name, int calories, boolean longSize, boolean baked) {
+    public Bread(String name, int Calorie, boolean longSize, boolean baked) {
         this.name = name;
-        this.Calories = calories;
+        this.Calorie = Calorie;
         this.longSize = longSize;
         this.baked = baked;
     }

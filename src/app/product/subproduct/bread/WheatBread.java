@@ -10,8 +10,8 @@ public class WheatBread extends Bread {
 
     private boolean baked;
 
-    public WheatBread(String name, int calories, boolean longSize, boolean baked) {
-        super(name, calories, longSize, baked);
+    public WheatBread(boolean longSize, boolean baked) {
+        super("wheatBread", 95, longSize, baked);
         this.longSize = longSize;
         this.baked = baked;
     }
