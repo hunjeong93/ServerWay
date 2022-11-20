@@ -35,8 +35,22 @@ public class OrderApp {
                     case 1:
                         menu.choiceSandwich();
                         productRepository.makeSandwich();
+
+                        break;
                     case 2:
-//                        장바구니
+                        menu.choiceSide();
+                        break;
+                    case 3://세트
+                        menu.choiceSet();
+                        menu.choiceSandwich();
+                        productRepository.makeSandwich();
+                        menu.choiceSide();
+                        break;
+                    case 4://콤보
+                        menu.choiceCombo();
+                        menu.choiceSandwich();
+                        productRepository.makeSandwich();
+                        menu.choiceDrink();
 
                 }
             }

@@ -7,7 +7,8 @@ public class AppConfigurer {
 
 
     public Menu menu() {return new Menu();}
+    public Order order() {return new Order();}
 
 
-    public ProductRepository productReposigory() { return new ProductRepository(menu());}
+    public ProductRepository productReposigory() { return new ProductRepository(menu(),order());}
 }

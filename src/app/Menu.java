@@ -90,4 +90,44 @@ public class Menu {
                 "[0.선택 완료] \n");
         System.out.println("-".repeat(60));
     }
+
+    public void choiceSide() {
+        System.out.println("[📣] 사이드 주문하기 __ 🍪🍟🥤");
+        System.out.println("☑ 사이드를 선택해주세요 : \n");
+        System.out.println("[1. 쿠키] [2. 칩] [3. 웨지 또는 스프] [4. 음료]\n");
+        System.out.println("-".repeat(60));
+    }
+    public void choiceCookie() {
+        System.out.println("☑ 쿠키를 선택해주세요 : \n");
+        System.out.println("[1. 라즈베리치즈쿠키] [2. 더블초코칩쿠키] [3. 초코칩쿠키] \n");
+        System.out.println("-".repeat(60));
+    }
+    public void choiceChip() {
+        System.out.println("☑ 칩을 선택해주세요 : \n");
+        System.out.println("[1. 포카칩] [2. 포테이토칩] [3. 스윙칩] \n");
+        System.out.println("-".repeat(60));
+
+    }
+
+    public void choiceSoup() {
+        System.out.println("☑ 웨지 또는 스프를 선택해주세요 : \n");
+        System.out.println("[1. 웨지포테이토] [2. 해쉬브라운]\n" +
+                "[3. 브로콜리체다스프] [4.양송이스프]\n");
+        System.out.println("-".repeat(60));
+
+    }
+
+    public void choiceDrink() {
+        System.out.println("☑ 음료를 선택해주세요 : \n");
+        System.out.println("[1. 콜라] [2. 제로콜라] [3. 사이다] [4.아메리카노]\n");
+        System.out.println("-".repeat(60));
+
+    }
+
+    public void choiceSet() {
+        System.out.println("[📣] 세트 주문하기 __ 🥪🍪🥤\n");
+    }
+    public void choiceCombo() {
+        System.out.println("[📣] 콤보 주문하기 __ 🥪🥤\n");
+    }
 }
