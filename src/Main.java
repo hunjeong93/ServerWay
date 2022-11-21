@@ -8,7 +8,9 @@ public class Main {
 
         OrderApp orderApp = new OrderApp(
                 appConfigurer.menu(),
-                appConfigurer.productReposigory()
+                appConfigurer.productReposigory(),
+                appConfigurer.cart()
+
 
         );
 

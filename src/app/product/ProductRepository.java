@@ -1,5 +1,6 @@
 package app.product;
 
+import app.Cart;
 import app.Menu;
 import app.Order;
 import app.product.subproduct.*;
@@ -33,6 +34,7 @@ public class ProductRepository {
     boolean check=true;
     private Menu menu;
     private Order order;
+    private Cart cart;
 
     public ProductRepository(Menu menu, Order order) {
         this.menu = menu;
@@ -86,35 +88,33 @@ public class ProductRepository {
         }
 
         int vegeCalorie=0;
-        if (vegetables != null) {
-             for (int i = 0; i < vegetables.length; i++) {
-                 vegeCalorie += vegetables[i].getCalorie();
-             }
-        }
+//        if (vegetables != null) {
+//             for (int i = 0; i < vegetables.length; i++) {
+//                 vegeCalorie += vegetables[i].getCalorie();
+//             }
+//        }
 
         int sauceCalorie=0;
-        if(sauces != null) {
-            for (int i = 0; i < sauces.length; i++) {
-                if(sauces[i] == null) i++;
-                sauceCalorie += sauces[i].getCalorie();
-            }
-        }
+//        if(sauces != null) {
+//            for (int i = 0; i < sauces.length; i++) {
+//                if(sauces[i] == null) i++;
+//                sauceCalorie += sauces[i].getCalorie();
+//            }
+//        }
         int otherCalorie=0;
-        if(otherIngredients != null) {
-            for (int i = 0; i < otherIngredients.length; i++) {
-                while(otherIngredients[i].equals(null)) i++;
-                if(i==5) break;
-                otherCalorie += otherIngredients[i].getCalorie();
-            }
-        }
+//        if(otherIngredients != null) {
+//            for (int i = 0; i < otherIngredients.length; i++) {
+//                while(otherIngredients[i].equals(null)) i++;
+//                if(i==5) break;
+//                otherCalorie += otherIngredients[i].getCalorie();
+//            }
+//        }
 
         calorie = bread.getCalorie() + cheeseCalorie + vegeCalorie +sauceCalorie +otherCalorie;
-        System.out.println("빵" + bread.getCalorie());
-        System.out.println("치즈" + cheeseCalorie);
-        System.out.println("야채" + vegeCalorie);
-        System.out.println("소스" + sauceCalorie);
-        System.out.println("추가재료" + otherCalorie);
-        System.out.println(calorie);
+
+        order.makeOrder(name,calorie,mainIngredient,bread,cheeses,vegetables,sauces,otherIngredients);
+
+
     }
 
     private void addOtherIngredient(Scanner scanner) {

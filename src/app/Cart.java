@@ -10,11 +10,16 @@ public class Cart {
     private Scanner scanner = new Scanner(System.in);
     private ProductRepository productRepository;
     private Menu menu;
+    private Cart cart;
 
-    public Cart(ProductRepository productRepository, Menu menu) {
+
+    public Cart(ProductRepository productRepository, Menu menu,Cart cart) {
         this.productRepository = productRepository;
         this.menu = menu;
+        this.cart = cart;
     }
+
+
 
     public void printCart() {
         System.out.println("🛒 장바구니\n");

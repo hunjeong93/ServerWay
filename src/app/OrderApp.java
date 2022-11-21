@@ -6,13 +6,16 @@ import app.product.subproduct.Sandwich;
 import java.util.Scanner;
 
 public class OrderApp {
+    private final app.Cart Cart;
     private Menu menu;
+    private Cart cart;
     private ProductRepository productRepository;
     private Order order;
 
-    public OrderApp(Menu menu, ProductRepository productRepository) {
+    public OrderApp(Menu menu, ProductRepository productRepository, Cart cart) {
         this.menu = menu;
         this.productRepository = productRepository;
+        this.Cart = cart;
     }
 
     public void start() {
@@ -53,6 +56,8 @@ public class OrderApp {
                         menu.choiceDrink();
 
                 }
+            } else if (input.equals("2")) {
+                cart.printCart();
             }
         }
     }
